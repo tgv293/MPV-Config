@@ -1,0 +1,32 @@
+# --- Executables & Libraries (Bỏ qua file chạy) ---
+*.exe
+*.dll
+*.com
+*.dylib
+*.so
+
+# --- Installers & Updaters (Bỏ qua script cập nhật) ---
+*.bat
+*.ps1
+*.sh
+
+# --- Personal Data (QUAN TRỌNG: Bỏ qua lịch sử xem) ---
+watch_later/
+portable_config/watch_later/
+**/watch_later/
+
+# --- Cache & Logs (Bỏ qua file rác) ---
+*.log
+*.tmp
+cache/
+shader_cache/
+icc_cache/
+
+# --- Screenshots (Bỏ qua ảnh chụp màn hình) ---
+screenshots/
+**/screenshots/
+
+# --- System Files ---
+Thumbs.db
+Desktop.ini
+.DS_Store
