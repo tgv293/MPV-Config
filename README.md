@@ -11,7 +11,8 @@
 * [Download](https://github.com/HongYue1/mpv-config/archive/refs/heads/main.zip) and extract the `portable_config` folder from this repo to the mpv folder you just made, beside the `mpv.exe`.
 * For mpv updates, right click `updater.bat` and run as administrator, then follow the instructions. There will be an option to install `yt-dlp` to be able to stream YouTube videos and any other websites supported by [yt-dlp,](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md) if you want. Once the initial run of `updater.bat` has completed a settings.xml file will be generated to save your preferences. 
 * After finishing it should look like this:
-  <img width="1084" height="454" alt="image" src="https://github.com/user-attachments/assets/d68c4709-2509-4af4-b5a2-155865e3239a" />
+  <img width="1327" height="867" alt="image" src="https://github.com/user-attachments/assets/5d6c61b5-5805-4eac-b9df-50429eeddb7f" />
+
 
 
 
