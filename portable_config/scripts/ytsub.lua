@@ -166,12 +166,18 @@ local function ytsub(is_auto)
         local source_lang = options.source_lang
 
         local orig_lang
-        for k,_ in pairs(subs) do
-            if string.find(k, "(orig)") ~= nil then
-                orig_lang = k
-                break
-            end
-        end
+		-- Ưu tiên tìm các tag mới của YouTube hoặc lấy đại một ngôn ngữ đầu tiên nếu không thấy "orig"
+		for k,_ in pairs(subs) do
+			if string.find(k, "orig") or string.find(k, "original") then
+				orig_lang = k
+				break
+			end
+		end
+
+		-- Nếu vẫn không tìm thấy orig_lang, lấy ngôn ngữ đầu tiên trong danh sách
+		if not orig_lang then
+			orig_lang = next(subs)
+		end
 
         load_autosub(orig_lang, subs[orig_lang], j["id"], true)
         if orig_lang == source_lang.."-orig" then
